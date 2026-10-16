@@ -1,0 +1,16 @@
+[Unit]
+Description=muse MCP bridge (Streamable HTTP MCP server)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=youruser
+Group=youruser
+EnvironmentFile=/home/youruser/muse-mcp-bridge/.env
+ExecStart=/home/youruser/muse-mcp-bridge/venv/bin/python /home/youruser/muse-mcp-bridge/server.py
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
