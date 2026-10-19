@@ -14,6 +14,10 @@ is a single Python file (`server.py`) on the official
 tools, the routing rule, the security model, the queue design — was
 written for this.
 
+**Status: complete.** In production since September 2026 and published
+here in October 2026 as a finished project; the notes below describe
+the design as it actually runs.
+
 ## Architecture
 
 ```
@@ -115,6 +119,12 @@ module were literals in the running copy and are environment variables
 here; the operator guide text was generalized; the example backend
 replaces the private household package. Tool behavior and the routing
 and security design are unchanged.
+
+## About
+
+Built and run by [Trent Telenda](https://trenttelenda.com) on his home
+server. The "muse" on the other end of this bridge is his own personal
+assistant; the bridge is how an outside agent platform reaches it.
 
 ## License
 
